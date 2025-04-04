@@ -43,40 +43,36 @@ $CurUri = $APPLICATION->GetCurUri();
                     </svg>
                     <svg class="icon">
                         <use xlink:href="#Vector"></use>
-                        <? $APPLICATION->IncludeComponent(
-                            "bitrix:sale.basket.basket.line",
-                            "cart",
-                            array(
-                                "COMPONENT_TEMPLATE" => ".default",
-                                "PATH_TO_BASKET" => SITE_DIR . "personal/cart/",    // Страница корзины
-                                "PATH_TO_ORDER" => SITE_DIR . "personal/order/make/",    // Страница оформления заказа
-                                "SHOW_NUM_PRODUCTS" => "Y",    // Показывать количество товаров
-                                "SHOW_TOTAL_PRICE" => "Y",    // Показывать общую сумму по товарам
-                                "SHOW_EMPTY_VALUES" => "Y",    // Выводить нулевые значения в пустой корзине
-                                "SHOW_PERSONAL_LINK" => "Y",    // Отображать персональный раздел
-                                "PATH_TO_PERSONAL" => SITE_DIR . "personal/",    // Страница персонального раздела
-                                "SHOW_AUTHOR" => "N",    // Добавить возможность авторизации
-                                "PATH_TO_AUTHORIZE" => "",    // Страница авторизации
-                                "SHOW_REGISTRATION" => "Y",    // Добавить возможность регистрации
-                                "PATH_TO_REGISTER" => SITE_DIR . "login/",    // Страница регистрации
-                                "PATH_TO_PROFILE" => SITE_DIR . "personal/",    // Страница профиля
-                                "SHOW_PRODUCTS" => "N",    // Показывать список товаров
-                                "POSITION_FIXED" => "N",    // Отображать корзину поверх шаблона
-                                "HIDE_ON_BASKET_PAGES" => "N",    // Не показывать на страницах корзины и оформления заказа
-                            ),
-                            false
-                        ); ?>
+                        <? $APPLICATION->IncludeComponent("bitrix:sale.basket.basket.line", "cart", Array(
+	"COMPONENT_TEMPLATE" => ".default",
+		"PATH_TO_BASKET" => SITE_DIR."personal/cart/",	// Страница корзины
+		"PATH_TO_ORDER" => SITE_DIR."personal/order/make/",	// Страница оформления заказа
+		"SHOW_NUM_PRODUCTS" => "Y",	// Показывать количество товаров
+		"SHOW_TOTAL_PRICE" => "Y",	// Показывать общую сумму по товарам
+		"SHOW_EMPTY_VALUES" => "Y",	// Выводить нулевые значения в пустой корзине
+		"SHOW_PERSONAL_LINK" => "Y",	// Отображать персональный раздел
+		"PATH_TO_PERSONAL" => SITE_DIR."personal/",	// Страница персонального раздела
+		"SHOW_AUTHOR" => "N",	// Добавить возможность авторизации
+		"PATH_TO_AUTHORIZE" => "",	// Страница авторизации
+		"SHOW_REGISTRATION" => "Y",	// Добавить возможность регистрации
+		"PATH_TO_REGISTER" => SITE_DIR."login/",	// Страница регистрации
+		"PATH_TO_PROFILE" => SITE_DIR."personal/",	// Страница профиля
+		"SHOW_PRODUCTS" => "N",	// Показывать список товаров
+		"POSITION_FIXED" => "N",	// Отображать корзину поверх шаблона
+		"HIDE_ON_BASKET_PAGES" => "N",	// Не показывать на страницах корзины и оформления заказа
+	),
+	false
+); ?>
                     </svg>
                     <svg class="icon">
                         <use xlink:href="#Search">
 
                         </use>
-                        <? $APPLICATION->IncludeComponent(
-                            "bitrix:search.title",
-                            ".default",
-                            array(),
-                            false
-                        ); ?>
+                        <? $APPLICATION->IncludeComponent("bitrix:search.title", ".default", Array(
+	
+	),
+	false
+); ?>
                     </svg>
                 </div>
             </div>
