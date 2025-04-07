@@ -1,3 +1,4 @@
+@import url("https://fonts.cdnfonts.com/css/arsenica-trial");
 .main_menu {
   list-style: none;
   margin: 0;
@@ -6,14 +7,17 @@
 }
 .main_menu li {
   display: inline-block;
-  margin: 0 5px;
+  margin: 0px;
 }
 .main_menu li a {
   text-align: center;
   color: var(--color-primary);
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 6px 10px;
+  margin-right: 50px;
+  font-family: "Arsenica Trial", sans-serif;
+  font-weight: 400;
 }
 .main_menu li a:hover {
-  color: gold;
-}/*# sourceMappingURL=style.css.map */
+  color: #c94f4f;
+} /*# sourceMappingURL=style.css.map */

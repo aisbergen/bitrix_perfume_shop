@@ -1,23 +1,22 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
 
-<div class="footer">
-    <div class="footer-cust">
-        <h2>Клиентам</h2>
-        <a href="">Войти</a>
-        <a href="">Корзина</a>
-        <a href="">Акции</a>
-        <a href="">Политика конфиденциальности</a>
-        <a href="">Пользовательское соглашение</a>
+<footer class="footer">
+    <div class="footer-column">
+        <h3>Клиентам</h3>
+        <a href="#">Войти</a>
+        <a href="#">Корзина</a>
+        <a href="#">Акции</a>
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Пользовательское соглашение</a>
     </div>
-
-    <div class="footer-about">
-        <h2>О нас</h2>
-        <a href="">О нас</a>
-        <a href="">Контакты</a>
-        <a href="">Наши магазины</a>
-        <a href="">Социальные сети</a>
+    <div class="divider"></div>
+    <div class="footer-column">
+        <h3>О нас</h3>
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
+        <a href="#">Социальные сети</a>
     </div>
-</div>
+</footer>
 
 
 
