@@ -1,0 +1,109 @@
+/* Wrapper to position arrows */
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 40px auto;
+  height: 400px; /* increase height as needed */
+}
+
+/* Slider container */
+.index_slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+/* Each slide */
+.index_slider li {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  height: 100%;
+  position: relative;
+}
+
+/* Background image + text layout */
+.index_slider_el {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 40px;
+  position: relative;
+}
+
+/* Text area */
+.ind_slid_txt_bl {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  max-width: 50%;
+  border-radius: 8px;
+}
+
+.ind_slid_title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ind_slid_txt {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.ind_red_bt {
+  display: inline-block;
+  background: #ff4d4d;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.ind_red_bt:hover {
+  background: #e63946;
+}
+
+/* Arrows */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 36px;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  user-select: none;
+  transition: background 0.3s ease;
+}
+
+.slider-arrow:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slider-arrow.left {
+  left: 10px;
+}
+
+.slider-arrow.right {
+  right: 10px;
+}
+
+/* Hide scrollbar */
+.index_slider::-webkit-scrollbar {
+  display: none;
+}
+.index_slider {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

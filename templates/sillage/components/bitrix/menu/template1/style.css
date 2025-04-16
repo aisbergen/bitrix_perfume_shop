@@ -17,6 +17,7 @@
   margin-right: 50px;
   font-family: "Arsenica Trial", sans-serif;
   font-weight: 400;
+  transition: color 0.3s ease;
 }
 .main_menu li a:hover {
   color: #c94f4f;

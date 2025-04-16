@@ -47,6 +47,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&display=swap" rel="stylesheet">
 <link href="https://fonts.cdnfonts.com/css/arsenica-trial" rel="stylesheet">
 
+<script>
+    function scrollSlider(direction) {
+        const slider = document.getElementById('indexSlider');
+        const width = slider.clientWidth;
+        slider.scrollBy({
+            left: direction * width,
+            behavior: 'smooth'
+        });
+    }
+</script>
 
 
 </body>
