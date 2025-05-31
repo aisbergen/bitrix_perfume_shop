@@ -1,0 +1,209 @@
+// .lato-regular {
+//     font-family: "Lato", sans-serif;
+//     font-weight: 400;
+//     font-style: normal;
+//   }
+
+body {
+    color: var(--color-primary);
+}
+
+//HEADER-----------------------------------------
+
+.header-content-left span{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.header-content-left{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px 20px;
+}
+
+// .header-content-left,
+// .header-icons {
+//   flex: 1;
+// }
+
+.header-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  
+}
+
+.icon {
+  cursor: pointer;
+  display: flex;
+  height: 20px;
+  width: 20px;
+}
+
+.icon svg {
+  height: 25px;
+  width: 25px;
+}
+
+.header-logo{
+  margin-left: 30px;
+}
+
+.basket-sidebar {
+  position: fixed;
+  right: -400px;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  z-index: 999;
+  transition: right 0.3s ease;
+  overflow-y: auto;
+}
+
+.basket-sidebar.open {
+  right: 0;
+}
+
+.basket-sidebar-content {
+  padding: 20px;
+  position: relative;
+}
+
+.basket-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+// .search-wrapper {
+//   display: none; /* изначально скрыт */
+//   justify-content: center;
+//   margin-top: 10px;
+// }
+
+// .search-wrapper.open {
+//   display: flex; /* при классе open — показывается */
+// }
+
+
+/* скрыт по умолчанию */
+.search-wrapper {
+  display: none;
+  position: absolute;
+  top: 80px; /* немного ниже иконки */
+  right: 0px;
+  border-radius: 10px;
+  padding: 10px 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-wrapper.open {
+  display: block;
+}
+
+/* стили для поля ввода и кнопки */
+#title-search-input {
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  font-size: 14px;
+  width: 250px;
+  transition: border 0.3s;
+}
+
+#title-search-input:focus {
+  border-color: #999;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 25px;
+  background-color: #1d1b38;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #444;
+}
+
+
+//FOOTER-----------------------------------------
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    background-color: #f8e1e4;
+    padding: 40px 20px;
+    font-family: 'Lato', sans-serif;
+  }
+  
+//   .footer-column {
+//     display: flex;
+//     flex-direction: column;
+//     max-width: 250px;
+//   }
+.divider {
+    width: 1px;
+    margin-top: 20px;
+  }
+  .footer h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1d1b38;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  
+  footer a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover,
+  .footer a.highlight {
+    color: #c94f4f;
+  }
+
+//LIST OF SHOPPING TYPES------------------------------------------
+
+.list p{
+  font-family: "Arsenica Trial", sans-serif;
+  text-transform: uppercase;
+}
+p{text-transform: uppercase;
+}
