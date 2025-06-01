@@ -1,6 +1,3 @@
-Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/styles.scss');
-Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '../catalog/bootstrap_v5/style.css');
-
 <?php if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
 
 
