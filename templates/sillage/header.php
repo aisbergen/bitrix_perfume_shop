@@ -193,20 +193,4 @@ $CurUri = $APPLICATION->GetCurUri();
                                         "SORT_ORDER2" => "ASC",
                                         "STRICT_SECTION_CHECK" => "N"
                                     )
-<<<<<<< HEAD
                                 ); ?></div>
-=======
-                                ); ?></div>
-
-        <div class="list">
-            <p>новинки</p>
-        </div>
-
-        <div class="list">
-            <p>бестселлеры</p>
-        </div>
-
-        <div class="list">
-            <p>акции</p>
-        </div>
->>>>>>> 9c24ebbc16725a3d0768b0f995b5600b092495e6
