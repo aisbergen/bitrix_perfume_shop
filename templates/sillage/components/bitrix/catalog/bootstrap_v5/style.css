@@ -1,125 +1,37 @@
-.grid {
+.catalog-sections {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.row {
+.catalog-section-link {
   font-family: "Arsenica Trial", sans-serif;
-  font-size: 55px;
+  font-size: 24px;
   font-weight: 500;
-  text-align: center;
-  letter-spacing: 1px;
+  color: #4b2e83;
   text-transform: uppercase;
-  color: #000;
   text-decoration: none;
+  position: relative;
+  transition: 0.3s;
 }
 
-.col {
-  font-family: "Arsenica Trial", sans-serif;
-  font-size: 55px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+.catalog-section-link:hover {
   color: #000;
-  text-decoration: none;
 }
 
-.catalog-title {
-  font-family: "Arsenica Trial", sans-serif;
-  font-size: 28px;
-  font-weight: 500;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #111;
+.catalog-section-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #4b2e83;
+  transition: 0.3s;
+  margin-top: 4px;
 }
 
-.grid .bx_content_section {
-  margin-bottom: 15px;
-}
-
-.grid .bx_sidebar {
-  margin-bottom: 15px;
-}
-
-/* grid2x1 */
-.grid2x1 {
-}
-
-.grid2x1 .bx_content_section {
-  float: left;
-  width: 66%;
-  margin-bottom: 15px;
-  font-family: "Arsenica Trial", sans-serif;
-  font-size: 28px;
-  font-weight: 500;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #111;
-}
-
-.grid2x1 .bx_sidebar {
-  float: right;
-  width: 33%;
-  margin-bottom: 15px;
-  padding-left: 5%;
-  box-sizing: border-box;
-  font-family: "Arsenica Trial", sans-serif;
-  font-size: 28px;
-  font-weight: 500;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #111;
-}
-
-@media (max-width: 960px) {
-  .grid2x1 .bx_sidebar {
-    padding-left: 4%;
-  }
-}
-
-@media (max-width: 640px) {
-  .grid2x1 .bx_content_section,
-  .grid2x1 .bx_sidebar {
-    width: 100%;
-    float: none;
-  }
-
-  .grid2x1 .bx_sidebar {
-    padding-left: 3%;
-  }
-}
-
-@media (max-width: 479px) {
-  .grid2x1 .bx_sidebar {
-    padding-left: 1%;
-  }
-}
-
-.catalog-block-header {
-  font-family: "Arsenica Trial", sans-serif;
-  font-size: 70px;
-  font-weight: 500;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #111;
-}
-
-catalog-sections {
-  font-family: "Arsenica Trial", sans-serif;
-  font-size: 55px;
-  font-weight: 500;
-  text-align: center;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #111;
+.catalog-section-link:hover::after {
+  width: 100%;
 }

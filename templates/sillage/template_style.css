@@ -166,13 +166,4 @@ footer a {
 .footer a:hover,
 .footer a.highlight {
   color: #c94f4f;
-}
-
-.list p {
-  font-family: "Arsenica Trial", sans-serif;
-  text-transform: uppercase;
-}
-
-p {
-  text-transform: uppercase;
 }/*# sourceMappingURL=template_style.css.map */
